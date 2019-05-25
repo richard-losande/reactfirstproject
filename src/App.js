@@ -10,16 +10,14 @@ import { BrowserRouter , Switch, Route, Link } from 'react-router-dom';
 
 function App() {
   return (
-<BrowserRouter>
           <Switch>
               <Route path='/' exact component={home} />
               <Route path='/bank' exact component={bankcontainer} />
               <Route path='/government' exact component={governmentcontainer} />
               <Route path='/addbank' exact component={addbank} />
+              <Route path='*' component={home} />
               
           </Switch>
-      
-      </BrowserRouter>
   );
 }
 
